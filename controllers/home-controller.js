@@ -1,4 +1,4 @@
-export const honeController = {
+export const homeController = {
     async index(request, response) {
       const viewData = {
         title: "WeatherTop Homepage",
