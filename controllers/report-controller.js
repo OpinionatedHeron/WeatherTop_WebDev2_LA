@@ -21,11 +21,11 @@ export const reportController = {
         code: request.body.code,
         temp: request.body.temp,
         windSpeed: request.body.windSpeed,
+        windDirection: request.body.windDirection,
         pressure: request.body.pressure,
     };
     console.log(`Updating Report ${reportId} from Station ${stationId}`);
-    const report = await reportStore.getReportById(reportId);
-    await reportStore.updateReport(report, updatedReport);
+    await reportStore.updateReport(reportId, updatedReport);
     response.redirect("/station/" + stationId);
   },
 };
