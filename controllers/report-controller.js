@@ -10,6 +10,7 @@ export const reportController = {
       title: "Edit Weather Details",
       station: await stationStore.getStationById(stationId),
       report: await reportStore.getReportById(reportId),
+      weatherIcon: getWeatherIcon(report.code),
     };
     response.render("report-view", viewData);
   },

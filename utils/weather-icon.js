@@ -19,3 +19,5 @@ const getWeatherIcon = (code) => {
     }
     return weather;
 };
+
+export default getWeatherIcon;

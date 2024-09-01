@@ -50,6 +50,24 @@
       "pressure": "20",
       "_id": "05bb089a-3815-48a9-b6bb-cd5af08ddde8",
       "stationid": "24ee6471-58c9-4592-968e-18b144003b21"
+    },
+    {
+      "code": "800",
+      "temp": "25",
+      "windSpeed": "3",
+      "windDirection": "east",
+      "pressure": "15",
+      "_id": "ec3263a2-106b-4b9c-bff6-0f4ee8a63157",
+      "stationid": "897ab3be-e092-4129-acc7-56e51fee775b"
+    },
+    {
+      "code": "801",
+      "temp": "10",
+      "windSpeed": "12",
+      "windDirection": "north",
+      "pressure": "15",
+      "_id": "5d36783a-87bf-4998-918b-9ffdea2740a0",
+      "stationid": "24ee6471-58c9-4592-968e-18b144003b21"
     }
   ]
 }
