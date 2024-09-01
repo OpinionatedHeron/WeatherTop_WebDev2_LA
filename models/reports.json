@@ -8,14 +8,6 @@
       "pressure": "10",
       "_id": "f1c91660-b2dc-4c9b-b8e7-552792360bd8",
       "stationid": "91b7991f-d277-4cc5-8b48-8594033a2d9c"
-    },
-    {
-      "code": "801",
-      "temp": "10",
-      "windSpeed": "3",
-      "pressure": "15",
-      "_id": "ff1bacfc-9c3b-492f-9655-8ee6a1b46968",
-      "stationid": "91b7991f-d277-4cc5-8b48-8594033a2d9c"
     }
   ]
 }
