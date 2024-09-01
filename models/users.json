@@ -1,1 +1,19 @@
-{"file":"./models/users.json","users":[]}
+{
+  "file": "./models/users.json",
+  "users": [
+    {
+      "firstName": "Test",
+      "lastName": "User",
+      "email": "test1@test.test",
+      "password": "WeatherTest",
+      "_id": "8fd3cd14-7b33-4150-aced-cd57588e44d1"
+    },
+    {
+      "firstName": "Test2",
+      "lastName": "U",
+      "email": "test2@test.test",
+      "password": "PassCheck",
+      "_id": "f25044dc-e54f-4d31-8e01-f58b03bdc5d0"
+    }
+  ]
+}
