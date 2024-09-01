@@ -19,20 +19,20 @@ Baseline:
 3. Can open stations with just the name
 
 Release 1:
-4. Users can create a report which shows, Weather Code, Temp, WindSpeed, Pressure
-5. Users can add any number of reports
+1. Users can create a report which shows, Weather Code, Temp, WindSpeed, Pressure
+2. Users can add any number of reports
 
 Release 2:
-6. Users can select Wind Direction from a dropdown menu
-7. Station also includes latitude and longitude  (though cannot make it show)
-8. Back end can find Max Temp, but for some reason will not appear in the dashboard
-9. Users can create an account with their First Name, Last Name, Email and Password
-10. Members can signup & login, as well as create an number of weather stations
+1. Users can select Wind Direction from a dropdown menu
+2. Station also includes latitude and longitude  (though cannot make it show)
+3. Back end can find Max Temp, but for some reason will not appear in the dashboard
+4. Users can create an account with their First Name, Last Name, Email and Password
+5. Members can signup & login, as well as create an number of weather stations
 
 Release 3:
-11. Tried to include ability for users to edit their details, but could not make details show in details page
-12. Dashboard sorts stations alphabetically
-13. Members can delete reports and stations
+1. Tried to include ability for users to edit their details, but could not make details show in details page
+2. Dashboard sorts stations alphabetically
+3. Members can delete reports and stations
 
 ## Site
 [WeatherTop Website](https://weathertopapp-la.glitch.me/)
