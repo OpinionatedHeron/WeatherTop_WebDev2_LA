@@ -1,7 +1,6 @@
 import express from "express";
 import { dashboardController } from "./controllers/dashboard-controller.js";
 import { aboutController } from "./controllers/about-controller.js";
-import { homeController } from "./controllers/home-controller.js";
 import { stationController } from "./controllers/station-controller.js";
 import { accountsController } from './controllers/accounts-controller.js';
 
@@ -21,4 +20,3 @@ router.get("/station/:id", stationController.index);
 router.post("/station/:id/addreport", stationController.addReport);
 router.get("/station/:stationid/deletereport/:reportid", stationController.deleteReport);
 router.get("/about", aboutController.index);
-router.get("/home", homeController.index);
