@@ -41,6 +41,15 @@
       "pressure": "20",
       "_id": "ebad75a9-8b9b-42e0-9af6-60e0e639bc47",
       "stationid": "d4722b79-8ec3-4cbd-9b9c-ebf230841ad2"
+    },
+    {
+      "code": "800",
+      "temp": "25",
+      "windSpeed": "12",
+      "windDirection": "east",
+      "pressure": "20",
+      "_id": "05bb089a-3815-48a9-b6bb-cd5af08ddde8",
+      "stationid": "24ee6471-58c9-4592-968e-18b144003b21"
     }
   ]
 }

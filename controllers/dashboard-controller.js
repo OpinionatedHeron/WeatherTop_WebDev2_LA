@@ -4,10 +4,12 @@ import { accountsController } from "./accounts-controller.js";
 export const dashboardController = {
   async index(request, response) {
     const loggedInUser = await accountsController.getLoggedInUser(request);
+    const stations = await stationStore.getStationsByUserId(loggedInUser._id);
+    stations.sort((a, b) => a.title.localeCompare(b.title));
     const viewData = {
       title: "WeatherTop Dashboard",
-      stations: await stationStore.getStationsByUserId(loggedInUser._id),
-    };
+      stations: stations,
+      };
     console.log("dashboard rendering");
     response.render("dashboard-view", viewData);
   },
@@ -16,6 +18,8 @@ export const dashboardController = {
     const loggedInUser = await accountsController.getLoggedInUser(request);
     const newStation = {
       title: request.body.title,
+      latitude: request.body.latitude,
+      longitude: request.body.longitude,
       userid: loggedInUser._id,
     };
     console.log(`adding station ${newStation.title}`);
