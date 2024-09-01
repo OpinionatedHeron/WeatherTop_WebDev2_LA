@@ -1,17 +1,23 @@
 <form class="box" action="/station/{{station._id}}/addreport" method="POST">
-  <label>Enter Track Details:</label>
   <div class="field is-horizontal">
     <div class="field-body">
       <div class="field">
-        <input class="input" type="text" placeholder="Enter Title" name="title">
+        <label style="font-weight:bold">Code</label>
+        <input class="input" type="text" placeholder="00" name="code">
       </div>
       <div class="field">
-        <input class="input" type="text" placeholder="Enter Artist" name="artist">
+        <label style="font-weight:bold">Temperature</label>
+        <input class="input" type="text" placeholder="00 DC" name="temp">
       </div>
       <div class="field">
-        <input class="input" type="text" placeholder="Enter duration" name="duration">
+        <label style="font-weight:bold">Wind Speed</label>
+        <input class="input" type="text" placeholder="00.00 kMh" name="windSpeed">
+      </div>
+      <div class="field">
+        <label style="font-weight:bold">Pressure</label>
+        <input class="input" type="text" placeholder="hPa" name="pressure">
       </div>
     </div>
   </div>
-  <button class="button is-primary">Add Track</button>
+  <button class="button is-primary">Submit Report</button>
 </form>
