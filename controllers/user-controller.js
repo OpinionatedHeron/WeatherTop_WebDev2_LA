@@ -13,7 +13,7 @@ export const userController = {
     async userDetails(request, response) {
         const user = await accountsController.getLoggedInUser(request);
         if (user) {
-            const viewData {
+            const viewData = {
                 title: "User Details",
                 user: user,
             };

@@ -20,7 +20,7 @@ export const reportController = {
     const reportId = request.params.reportid;
     const updatedReport = {
         code: request.body.code,
-        temp: request.body.temp,
+        temp: Number(request.body.temp),
         windSpeed: request.body.windSpeed,
         windDirection: request.body.windDirection,
         pressure: request.body.pressure,

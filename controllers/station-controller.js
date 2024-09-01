@@ -1,12 +1,15 @@
 import { stationStore } from "../models/station-store.js";
 import { reportStore } from "../models/report-store.js";
+import { weatherInfo } from "../utils/max-min.js";
 
 export const stationController = {
   async index(request, response) {
     const station = await stationStore.getStationById(request.params.id);
+    const maxTemp = weatherInfo.getMaxTemp(station);
     const viewData = {
       title: "Station",
       station: station,
+      maxTemp: maxTemp,
     };
     response.render("station-view", viewData);
   },
@@ -15,7 +18,7 @@ export const stationController = {
     const station = await stationStore.getStationById(request.params.id);
     const newReport = {
       code: request.body.code,
-      temp: request.body.temp,
+      temp: Number(request.body.temp),
       windSpeed: request.body.windSpeed,
       windDirection: request.body.windDirection,
       pressure: request.body.pressure,
